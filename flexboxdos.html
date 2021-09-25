@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexboxdos</title>
+<style>
+    body{
+        background-color: aquamarine;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 
+        Verdana, sans-serif;
+    }
+ul,li{
+    padding: 0;
+    list-style: none;
+}
+
+ul{
+    display: flex;
+    margin: 10px;
+    background-color: rgb(118, 126, 118);
+    height: 100px;
+    justify-content: space-between;
+}
+
+li{
+    width: 18%;
+    display:block;
+    line-height: 70px ;
+    background-color: saddlebrown;
+    height: 70px;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+}
+
+.flexstart{
+    align-items: flex-start;
+}
+
+.flexend{
+    align-items: flex-end;
+}
+
+.flexcenter{
+    align-items: center;
+}
+
+.flexbaseline{
+    align-items: baseline;
+}
+
+.flexstretch{
+    height: auto;
+    line-height: 100px;
+}
+</style>
+</head>
+<body>
+
+    <div class:"test">
+        <h2>Flex Start</h2>
+        <ul class="flexstart">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+    <div class:"test">
+        <h2>Flex End</h2>
+        <ul class="flexend">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+
+    <div class:"test">
+        <h2>Flex Center</h2>
+        <ul class="flexcenter">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+    
+    <div class:"test">
+        <h2>Flex Baseline</h2>
+        <ul class="flexbaseline">
+            <li style="line-height: 50px;">1</li>
+            <li style="line-height: 60px;">2</li>
+            <li>3</li>
+            <li>4</li>
+            <li style="line-height: 30px;">5</li>
+        </ul>
+    </div>
+
+    <div class:"test">
+        <h2>Flex Stretch</h2>
+        <ul class="flexstretch">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>   
+</body>
+</html>

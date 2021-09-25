@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones</title>
+<style>
+    section{
+        width: 100px;
+        height: 100px;
+        animation-name: una_animacion;
+        animation-iteration-count: infinite;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+    }
+    @keyframes una_animacion{
+        0%{width: 100px;}
+        25%{width: 300px;}
+        50%{background-color: aqua;
+        width: 400px;}
+        100%{background-color: brown;}
+    }
+
+    h1{
+        color: brown;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-name: aparecer;
+    }
+    @keyframes aparecer{
+        0%{opacity: 0;}
+        25%{opacity: 0;}
+        50%{opacity: 1;
+        color: coral;}
+        100%{opacity: 2;
+        color: darkblue;}
+    }
+
+    #segundot{
+        color: black;
+        animation-duration: 6s;
+        animation-name: segundot;
+        animation-iteration-count: unset;
+    }
+    @keyframes segundot{
+        0%{opacity: 0;}
+        25%{opacity: 0;}
+        50%{opacity: 1;
+        color:red;}
+        100%{opacity: 2;
+        color: darkmagenta;}
+    }
+</style>
+</head>
+<body>
+    <h2>Animaciones en CSS</h2>
+<section>
+    <h3>Soy una Seccion para la Animacion</h3>
+</section>
+
+<h1>Animaciones con Texto</h1>
+
+<h1 id="segundot">Otra Animacion con Texto</h1>
+
+</body>
+</html>

@@ -1,0 +1,106 @@
+nav{
+    background-color: rgb(11, 58, 11);
+    height: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+nav:hover,a:hover{
+    background-color: red;
+    color: white;
+}
+
+#primerArticuloPp{
+    font-style: italic;
+    text-transform: capitalize;
+    line-height: 2.0;
+    letter-spacing: 5px;
+}
+
+#primerArticuloSp{
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     text-transform: capitalize; 
+}
+
+#primerArticuloTp{
+    font-weight: bold ;
+    font-size: 20px;
+    font-family: fantasy;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 30px;
+}
+#primerArticuloCp{
+    text-align: right;
+    font-family: monospace;
+    font-weight:bolder;
+}
+
+#listaModificadaUno{
+    list-style-position: inside;
+}
+
+#listaModificadaDos{
+    list-style-position: outside;
+}
+
+h1{
+    color: brown;
+}
+
+h2{
+    color: red;
+}
+
+body{
+    background-color: silver;
+}
+
+section{
+    padding: 50px;
+    margin-left: 100px;
+}
+
+section article{
+    background-color: whitesmoke;
+    width: 500px;
+    height: 400px;
+}
+
+section article p{
+    line-height: 30px;
+}
+
+#cajadepractica{
+    color: rgb(6, 49, 10);
+}
+.box {
+    background-color:chocolate;
+    width: 400px;
+    height: 200px;
+    border: 5px solid blue;
+}
+
+div{
+    border: 1px solid black;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 200px 300px;
+    grid-template-rows: 45px 100px ;
+}
+
+.grid2{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 3fr 3fr;
+}
+
+.grid3{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+
+}
+

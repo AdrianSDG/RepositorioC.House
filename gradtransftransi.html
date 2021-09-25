@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes, Transformaciones y Transiciones</title>
+<style>
+#defecto{
+background-image: linear-gradient(red, yellow);
+}
+
+#derecha{
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+#abajo {
+    background-image: linear-gradient(to bottom, red, yellow);
+}
+
+#izquierda {
+    background-image: linear-gradient(to left, red, yellow);
+}
+
+#arriba {
+    background-image: linear-gradient(to top, red, yellow);
+}
+
+#plano{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#objetouno{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: translate(50px, 50px);
+}
+
+#objetodos{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: rotate(60deg);
+}
+
+#objetotres{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: rotateX(65deg);
+}
+
+#objetocuatro{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: rotateY(65deg);
+}
+
+#objetocinco{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: rotateZ(65deg);
+}
+
+#objetoseis{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: scale(2,1);
+}
+
+#objetosiete{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: skewX(20deg);
+}
+
+#objetoocho{
+    background-color: red;
+    border: 3px solid black;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    transform: skewY(20deg);
+}
+
+#transi {
+height: 150px;
+width: 200px;
+background-color: yellowgreen;
+transition: height 1s;
+}
+#transi:hover {
+height: 300px;
+}
+
+section{
+    height: 100px;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(101,156,228);
+}
+section:hover{
+    height: 100px;
+    width: 500px;
+    padding: 50px;
+    background-color: yellow;
+}
+
+input{
+    width: 100px;
+    height: 30px;
+    transition: all 2s;
+}
+input:focus{
+    width: 200px;
+    font-size: 30px;
+}
+</style>
+
+</head>
+<body>
+    <h2>Gradientes por Defecto</h2>
+    
+    <div id="defecto">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+    
+        </div>
+
+        <h2>Gradientes por Derecha</h2>
+    
+    <div id="derecha">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+    
+        </div>
+
+        <h2>Gradientes por Abajo</h2>
+    
+    <div id="abajo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+    
+        </div>
+
+        <h2>Gradientes por Izquierda</h2>
+    
+    <div id="izquierda">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+    
+        </div>
+
+        <h2>Gradientes por Derecha</h2>
+    
+    <div id="arriba">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+    
+        </div>
+        <h2>Transformaciones</h2>
+        
+    <div id="plano">
+        <div id="objetouno">
+           <h3>objeto a Mover</h3>
+
+        </div>
+
+        <div id="objetodos">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetotres">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetocuatro">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetocinco">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetoseis">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetosiete">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+
+         <div id="objetoocho">
+            <h3>objeto a Mover</h3>
+ 
+         </div>
+    </div>
+    
+<div id="transi">
+        <h3>Contenido</h3>
+</div>
+
+<section>
+    <h3>Otro Ejemplo</h3>
+</section>
+    
+<aside>
+        <p>
+            <input type="text">
+        </p>
+</aside>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+    Debitis amet eum quis veritatis ipsam sed 
+    eos dolore, repellendus, dolorem deleniti 
+    est inventore porro distinctio?</p>
+
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+    sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+    voluptates!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+        Debitis amet eum quis veritatis ipsam sed 
+        eos dolore, repellendus, dolorem deleniti 
+        est inventore porro distinctio?</p>
+    
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+        sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+        voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+            Debitis amet eum quis veritatis ipsam sed 
+            eos dolore, repellendus, dolorem deleniti 
+            est inventore porro distinctio?</p>
+        
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+            sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+            voluptates!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Saepe veritatis distinctio nemo quod odio! 
+                Debitis amet eum quis veritatis ipsam sed 
+                eos dolore, repellendus, dolorem deleniti 
+                est inventore porro distinctio?</p>
+            
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium consectetur harum mollitia, <br>nemo quisquam explicabo ipsum debitis obcaecati nesciunt laudantium 
+                sapiente similique ea sequi? Facere quis illo natus? Mollitia, 
+                voluptates!</p>            
+</body>
+</html>
